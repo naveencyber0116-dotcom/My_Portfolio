@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Naveen | Graphic Designer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:black;
+flex-wrap:wrap;
+}
+
+/* LOGO */
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-area img{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+.logo-area h1{
+color:#ff3c3c;
+font-size:20px;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#ff3c3c;
+}
+
+/* HERO */
+
+.hero{
+padding:100px 8%;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.hero-title{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-bottom:10px;
+text-align:center;
+}
+
+.hero-title img{
+width:200px;
+height:auto;
+object-fit:contain;
+}
+
+.hero-title h2{
+font-size:50px;
+margin-top:5px;
+}
+.hero span{
+color:#ff3c3c;
+}
+
+.hero p{
+color:#bbb;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+background:#ff3c3c;
+padding:12px 26px;
+margin-top:20px;
+border-radius:5px;
+text-decoration:none;
+color:white;
+}
+
+/* SECTION */
+
+section{
+padding:80px 8%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+color:#ccc;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-top:25px;
+}
+
+.skill{
+background:#1c1c1c;
+padding:10px 18px;
+border-radius:8px;
+font-size:14px;
+}
+
+/* PORTFOLIO */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:contain;
+background:black;
+}
+
+.card h3{
+text-align:center;
+padding:15px;
+font-size:15px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.service{
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.service h3{
+color:#ff3c3c;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:8px;
+color:#ccc;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+color:#aaa;
+margin-top:40px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.hero{
+padding-top:60px;
+}
+
+.hero-title img{
+width:120px;
+height:120px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+section{
+padding:60px 6%;
+}
+
+.card img{
+height:220px;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h2{
+font-size:26px;
+}
+
+.hero-title{
+flex-direction:column;
+}
+
+.logo-area img{
+width:50px;
+height:50px;
+}
+
+.logo-area h1{
+font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+<img src="images/logo.png">
+<h1>N<span> For</span> Editz</h1>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-title">
+<img src="images/logo.png">
+<h2>I am <span>Naveen</span></h2>
+</div>
+
+<p>Graphic Designer | Apparel Designer | Video Editor</p>
+
+<p>Logo Design • T-Shirt Design • Hoodie Design • Sweatshirt Design</p>
+
+<a href="#portfolio" class="btn">View My Work</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p class="about">
+I am a creative graphic designer focused on logo design and apparel graphics,
+designing T-shirts, hoodies, and sweatshirt designs for brands and creators.
+I enjoy building strong visual identities and stylish designs that help brands stand out.
+I also create engaging visual content using CapCut and After Effects.
+</p>
+
+<div class="skills">
+
+<div class="skill">Logo Design</div>
+<div class="skill">T-Shirt Design</div>
+<div class="skill">Hoodie Design</div>
+<div class="skill">Sweatshirt Design</div>
+<div class="skill">CapCut Editing</div>
+<div class="skill">After Effects</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<h2>My Work</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/logo 1.png">
+<h3>Logo Design</h3>
+</div>
+
+<div class="card">
+<img src="images/brand 1.png">
+<h3>Brand Logo</h3>
+</div>
+
+<div class="card">
+<img src="images/t shirt 1.png">
+<h3>T-Shirt Design</h3>
+</div>
+
+<div class="card">
+<img src="images/t shirt 2.png">
+<h3>Streetwear T-Shirt</h3>
+</div>
+
+<div class="card">
+<img src="images/hoddie 1.png">
+<h3>Hoodie Design</h3>
+</div>
+
+<div class="card">
+<img src="images/sweat shirt 1.png">
+<h3>Sweatshirt Design</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Graphic Design</h3>
+<p>Logos, branding, posters and social media graphics</p>
+</div>
+
+<div class="service">
+<h3>Apparel Design</h3>
+<p>T-shirts, hoodies and sweatshirt graphics</p>
+</div>
+
+<div class="service">
+<h3>Social Media Design</h3>
+<p>Instagram posts, thumbnails and promotional graphics</p>
+</div>
+
+<div class="service">
+<h3>Video Editing</h3>
+<p>Reels, Shorts and YouTube edits</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: douthubajinaveen123@gmail.com</p>
+<p>Fiverr: fiverr.com/yourprofile</p>
+<p>WhatsApp: +91 8247590532</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Naveen | Graphic Designer</p>
+
+</footer>
+
+</body>
+</html>
